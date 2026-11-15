@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050505">
+  <title>CSS Infinite Scroll Animation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <h1>CSS Infinite Scroll Animation</h1>
+
+    <section class="scroll-container" aria-label="Continuously scrolling image gallery">
+      <div class="scroll-content">
+        <!-- First set of cards -->
+        <figure class="item">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&auto=format&fit=crop&q=80" alt="Laptop and workspace">
+        </figure>
+        <figure class="item">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=600&auto=format&fit=crop&q=80" alt="Mountain landscape">
+        </figure>
+        <figure class="item">
+          <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=600&auto=format&fit=crop&q=80" alt="Ocean waves">
+        </figure>
+        <figure class="item">
+          <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=600&auto=format&fit=crop&q=80" alt="Mountain lake">
+        </figure>
+        <figure class="item">
+          <img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?w=600&auto=format&fit=crop&q=80" alt="Night sky">
+        </figure>
+        <figure class="item">
+          <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?w=600&auto=format&fit=crop&q=80" alt="Open landscape">
+        </figure>
+
+        <!-- Duplicate set is required for a seamless -50% loop -->
+        <figure class="item" aria-hidden="true">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&auto=format&fit=crop&q=80" alt="">
+        </figure>
+        <figure class="item" aria-hidden="true">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=600&auto=format&fit=crop&q=80" alt="">
+        </figure>
+        <figure class="item" aria-hidden="true">
+          <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=600&auto=format&fit=crop&q=80" alt="">
+        </figure>
+        <figure class="item" aria-hidden="true">
+          <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=600&auto=format&fit=crop&q=80" alt="">
+        </figure>
+        <figure class="item" aria-hidden="true">
+          <img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?w=600&auto=format&fit=crop&q=80" alt="">
+        </figure>
+        <figure class="item" aria-hidden="true">
+          <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?w=600&auto=format&fit=crop&q=80" alt="">
+        </figure>
+      </div>
+    </section>
+    <p class="hint">Hover over a card to pause the animation</p>
+  </main>
+</body>
+</html>
